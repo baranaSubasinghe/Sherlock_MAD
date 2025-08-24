@@ -35,15 +35,15 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="412dp"
-        android:layout_height="537dp"
-        android:background="#CD181717"
+        android:layout_width="397dp"
+        android:layout_height="508dp"
+        android:background="@drawable/search_background"
+        android:backgroundTint="@color/secondaryColor1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.847" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -52,7 +52,7 @@
         android:backgroundTint="#E4DFDF"
         android:drawableRight="@android:drawable/sym_action_email"
         android:ems="10"
-        android:hint="Enter Your Email"
+        android:hint="@string/hint_email"
         android:inputType="textEmailAddress"
         android:shadowColor="#2C2020"
         android:textColor="#DBD8D8"
@@ -70,7 +70,7 @@
         android:backgroundTint="#D1CECE"
         android:drawableEnd="@android:drawable/ic_menu_view"
         android:ems="10"
-        android:hint="Enter Your Password"
+        android:hint="@string/hint_password"
         android:inputType="numberPassword"
         android:textColor="#FDFDFD"
         android:textColorHint="#CCC7C7"
@@ -86,7 +86,7 @@
         android:layout_width="260dp"
         android:layout_height="46dp"
         android:backgroundTint="#7BCCC5"
-        android:text="LOGIN"
+        android:text="@string/btn_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

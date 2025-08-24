@@ -12,7 +12,6 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home) // link to your home layout
 
 
-
         val foundBtn = findViewById<Button>(R.id.found_button)
 
         foundBtn.setOnClickListener {
@@ -26,21 +25,35 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Find your ImageView
+        // profile
         val profileIcon = findViewById<ImageView>(R.id.imageView7)
 
-        // Set click listener
         profileIcon.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
         }
 
-        // Find your ImageView
+        // chat
         val chatIcon = findViewById<ImageView>(R.id.imageView8)
 
-        // Set click listener
         chatIcon.setOnClickListener {
             val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
+
+        //Announcement
+        val AnnIcon = findViewById<ImageView>(R.id.imageView5)
+
+        AnnIcon.setOnClickListener {
+            val intent = Intent(this, AnnouncementActivity::class.java)
+            startActivity(intent)
+        }
+
+        //Home
+        val HomeIcon = findViewById<ImageView>(R.id.imageView9)
+
+        HomeIcon.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }

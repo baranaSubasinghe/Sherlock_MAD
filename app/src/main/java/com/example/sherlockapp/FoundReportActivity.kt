@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
-class ProfileActivity : AppCompatActivity() {
+class FoundReportActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_userprofile) // your profile UI
+        setContentView(R.layout.activity_foundreport) // link to your found page
 
         // profile
         val profileIcon = findViewById<ImageView>(R.id.imageView7)
@@ -39,13 +39,6 @@ class ProfileActivity : AppCompatActivity() {
 
         HomeIcon.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-        }
-
-        val logoutIcon = findViewById<ImageView>(R.id.imageView13)
-
-        logoutIcon.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }

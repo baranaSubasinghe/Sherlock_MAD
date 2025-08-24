@@ -6,7 +6,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DEDBCC">
+    android:background="@color/primaryColor">
 
     <TextView
         android:id="@+id/textView30"
@@ -169,8 +169,8 @@
         android:layout_width="146dp"
         android:layout_height="61dp"
         android:layout_marginTop="48dp"
-        android:backgroundTint="#189E91"
-        android:text="Report Found"
+        android:backgroundTint="@color/accentColor"
+        android:text="@string/title_report_found"
         app:layout_constraintEnd_toEndOf="@+id/textView27"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/textView27"
@@ -180,8 +180,8 @@
         android:id="@+id/lost_button"
         android:layout_width="146dp"
         android:layout_height="61dp"
-        android:backgroundTint="#189E91"
-        android:text="Report Lost"
+        android:backgroundTint="@color/accentColor"
+        android:text="@string/title_report_lost"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/found_button"
         app:layout_constraintHorizontal_bias="0.0"
@@ -194,8 +194,7 @@
         android:layout_width="413dp"
         android:layout_height="97dp"
 
-        android:background="#0F8C8E"
-        android:backgroundTint="#023C3C"
+        android:background="@color/secondaryColor1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

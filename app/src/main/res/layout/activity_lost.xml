@@ -9,8 +9,8 @@
         android:id="@+id/textView5"
         android:layout_width="415dp"
         android:layout_height="96dp"
-        android:background="#AF023C3C"
-        android:backgroundTint="#023C3C"
+        android:background="@color/secondaryColor2"
+
         app:layout_constraintBottom_toTopOf="@+id/NavigationBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,9 +36,7 @@
         android:id="@+id/NavigationBar"
         android:layout_width="413dp"
         android:layout_height="97dp"
-
-        android:background="#0F8C8E"
-        android:backgroundTint="#023C3C"
+        android:background="@color/secondaryColor1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -213,7 +211,7 @@
                 android:text="Set lost Location" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/addfound"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#8990CAC3"

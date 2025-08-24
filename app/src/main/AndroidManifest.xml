@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SherlockApp">
 
+        <activity android:name=".LostReportActivity"/>
+        <activity android:name=".FoundReportActivity"/>
+        <activity android:name=".AnnouncementActivity"/>
         <activity android:name=".ChatActivity"/>
         <activity android:name=".LostActivity"/>
         <activity android:name=".FoundActivity"/>
