@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import com.google.android.material.materialswitch.MaterialSwitch
 
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,5 +50,21 @@ class ProfileActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+        //dark mode button
+        val darkModeSwitch = findViewById<MaterialSwitch>(R.id.darkModeSwitch)
+        val sharedPreferences = getSharedPreferences("AppSettingsPrefs", MODE_PRIVATE)
+        val isDarkMode = sharedPreferences.getBoolean("DarkMode", false)
+        darkModeSwitch.isChecked = isDarkMode
+
+        darkModeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            sharedPreferences.edit().putBoolean("DarkMode", isChecked).apply()
+            AppCompatDelegate.setDefaultNightMode(
+                if (isChecked) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+            )
+
+        }
+
+
     }
 }

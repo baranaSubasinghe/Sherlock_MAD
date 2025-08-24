@@ -12,16 +12,50 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SherlockApp">
 
-        <activity android:name=".LostReportActivity"/>
-        <activity android:name=".FoundReportActivity"/>
-        <activity android:name=".AnnouncementActivity"/>
-        <activity android:name=".ChatActivity"/>
-        <activity android:name=".LostActivity"/>
-        <activity android:name=".FoundActivity"/>
-        <activity android:name=".ProfileActivity"/>
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
+
+        <activity
+            android:name=".BaseActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".LostReportActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".FoundReportActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AnnouncementActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".LostActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".FoundActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"/>
+
         <activity
 
             android:name=".MainActivity"
