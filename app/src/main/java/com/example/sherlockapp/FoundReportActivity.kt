@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class FoundReportActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_foundreport) // link to your found page
+        setContentView(R.layout.activity_foundreport)
 
         // profile
         val profileIcon = findViewById<ImageView>(R.id.imageView7)

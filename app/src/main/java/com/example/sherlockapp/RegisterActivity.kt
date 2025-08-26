@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register) // link to your register layout
+        setContentView(R.layout.activity_register)
 
         val loginText = findViewById<TextView>(R.id.textView8)
         loginText.setOnClickListener {

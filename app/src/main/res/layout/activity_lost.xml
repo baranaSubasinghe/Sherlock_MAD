@@ -22,7 +22,7 @@
         android:layout_width="122dp"
         android:layout_height="27dp"
         android:shadowColor="#1B0B0B"
-        android:text="Report Found"
+        android:text="Report Lost"
         android:textColor="#DBD8D8"
         android:textColorHighlight="#1A0E0E"
         android:textColorLink="#E0D4D4"

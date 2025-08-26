@@ -11,7 +11,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        // find the Register textView (id = textView8 in your XML)
+
         val registerText = findViewById<TextView>(R.id.textView8)
 
         // set click listener
@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
         loginBtn.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
-            finish() // close login so user can't go back with back button
+            finish()
         }
     }
 }

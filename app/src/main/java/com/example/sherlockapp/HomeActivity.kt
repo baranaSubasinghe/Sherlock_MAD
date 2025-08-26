@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home) // link to your home layout
+        setContentView(R.layout.activity_home)
 
 
         val foundBtn = findViewById<Button>(R.id.found_button)

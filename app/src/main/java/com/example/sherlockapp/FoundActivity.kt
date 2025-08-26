@@ -12,7 +12,7 @@ import androidx.appcompat.app.AlertDialog
 class FoundActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_found) // link to your found page UI
+        setContentView(R.layout.activity_found)
 
         val addBtn = findViewById<Button>(R.id.addfound)
 

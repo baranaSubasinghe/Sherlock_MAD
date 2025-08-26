@@ -10,7 +10,7 @@ import com.google.android.material.materialswitch.MaterialSwitch
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_userprofile) // your profile UI
+        setContentView(R.layout.activity_userprofile)
 
         // profile
         val profileIcon = findViewById<ImageView>(R.id.imageView7)

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class LostActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lost) // link to your found page UI
+        setContentView(R.layout.activity_lost)
 
         val addBtn = findViewById<Button>(R.id.addfound)
 
